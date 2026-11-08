@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DSDM na prática – Blog da Equipe 6</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--tx:#1d2433;--mut:#5b6478;--ac:#2f5bea;--bd:#dde2ee;--th:#e8efff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1b2030;--tx:#e8ebf4;--mut:#a3abbf;--ac:#8fa8ff;--bd:#2c3347;--th:#232b44}}
+:root[data-theme="dark"]{--bg:#12151c;--card:#1b2030;--tx:#e8ebf4;--mut:#a3abbf;--ac:#8fa8ff;--bd:#2c3347;--th:#232b44}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--ac);color:#fff;padding:2rem 1rem}
+header div,main,footer{max-width:820px;margin:0 auto}
+header h1{margin:0 0 .4rem;font-size:2rem}
+header p{margin:.2rem 0;opacity:.95}
+main{padding:1.2rem 1rem}
+article{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:1.2rem 1.3rem;margin:1.2rem 0}
+article h2{margin:.2rem 0 .1rem;font-size:1.35rem}
+.meta{color:var(--mut);font-size:.88rem;margin:0 0 .8rem}
+h3{margin:1rem 0 .3rem;font-size:1.05rem;color:var(--ac)}
+li{margin:.25rem 0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{border:1px solid var(--bd);padding:.55rem .7rem;text-align:left;vertical-align:top}
+th{background:var(--th)}
+td:first-child{font-weight:600;width:26%}
+footer{padding:0 1rem 2rem;color:var(--mut);font-size:.88rem}
+footer p{margin:.4rem 0;overflow-wrap:anywhere}
+footer a{color:var(--ac)}
+</style>
+</head>
+<body>
+<header><div>
+<h1>DSDM na prática</h1>
+<p>Blog da Equipe 6 sobre o método ágil DSDM</p>
+<p>Cauã Torbes Vieira e Matheus de Castro</p>
+<p>Engenharia de Software II · IFPR – Campus Umuarama · Profa. Márcia Cristina Dadalto Pascutti</p>
+</div></header>
+<main>
+
+<article>
+<h2>Post 4 – Quadro resumo do DSDM</h2>
+<p class="meta">08/11/2026</p>
+<p>Como a nossa equipe trabalha com um único método, este é o quadro resumo de tudo o que vimos nos posts anteriores.</p>
+<div class="tw"><table>
+<tr><th>Item</th><th>DSDM</th></tr>
+<tr><td>Nome</td><td>Dynamic Systems Development Method (no enunciado: Dynamic System Development Model)</td></tr>
+<tr><td>Origem</td><td>1994, criado por um consórcio de empresas do Reino Unido para dar mais disciplina ao RAD</td></tr>
+<tr><td>Versão atual</td><td>DSDM Agile Project Framework (2014); antes, chamado de Atern</td></tr>
+<tr><td>Ideia central</td><td>Prazo, custo e qualidade fixos; o escopo é ajustado conforme a prioridade</td></tr>
+<tr><td>Princípios</td><td>8: foco no negócio, entrega no prazo, colaboração, qualidade, construção incremental, desenvolvimento iterativo, comunicação e controle</td></tr>
+<tr><td>Fases</td><td>Pré-projeto, Viabilidade, Fundamentos, Exploração, Engenharia, Implantação e Pós-projeto</td></tr>
+<tr><td>Papéis</td><td>Patrocinador, Visionário, Gerente do projeto, Coordenador técnico, Líder de equipe, Embaixador do negócio, Desenvolvedor e Testador</td></tr>
+<tr><td>Técnicas</td><td>MoSCoW, Timeboxing, Workshops facilitados, Desenvolvimento iterativo, Modelagem e prototipação</td></tr>
+<tr><td>Pontos fortes</td><td>Entregas frequentes de valor; cliente sempre envolvido; prioridades claras; prazo sob controle; testes durante todo o projeto; inclui gestão e governança</td></tr>
+<tr><td>Pontos de atenção</td><td>Exige o cliente presente o tempo todo; tem muitos papéis, o que pode pesar em equipes pequenas; é menos conhecido que o Scrum</td></tr>
+<tr><td>Indicado para</td><td>Projetos com prazo fechado, requisitos que mudam e cliente disponível para participar</td></tr>
+</table></div>
+</article>
+
+<article>
+<h2>Post 3 – Papéis e técnicas</h2>
+<p class="meta">08/11/2026</p>
+<h3>Papéis</h3>
+<ul>
+<li><b>Patrocinador do negócio:</b> quem banca o projeto e decide sobre o investimento.</li>
+<li><b>Visionário do negócio:</b> garante que o projeto siga o objetivo da empresa.</li>
+<li><b>Gerente do projeto:</b> cuida do planejamento e da gestão geral.</li>
+<li><b>Coordenador técnico:</b> cuida das decisões técnicas e da arquitetura.</li>
+<li><b>Líder de equipe:</b> organiza o dia a dia do time.</li>
+<li><b>Embaixador do negócio:</b> representa os usuários dentro do time e ajuda a definir prioridades.</li>
+<li><b>Desenvolvedor e testador da solução:</b> constroem e testam o produto.</li>
+</ul>
+<h3>Técnicas</h3>
+<ul>
+<li><b>MoSCoW:</b> classifica os requisitos em Must have (obrigatório), Should have (importante), Could have (desejável) e Won’t have this time (fica para depois). Pela regra do DSDM, os Must have ocupam no máximo cerca de 60% do esforço, para sobrar folga.</li>
+<li><b>Timeboxing:</b> o trabalho é dividido em blocos de tempo fixos, geralmente de poucas semanas. Se o tempo aperta, corta-se o que tem menos prioridade, nunca o prazo.</li>
+<li><b>Workshops facilitados:</b> reuniões guiadas entre cliente e equipe para decidir rápido.</li>
+<li><b>Desenvolvimento iterativo:</b> ciclos curtos, com retorno do cliente a cada entrega.</li>
+<li><b>Modelagem e prototipação:</b> desenhos e protótipos para validar com o cliente antes de construir tudo.</li>
+</ul>
+</article>
+
+<article>
+<h2>Post 2 – Princípios e fases</h2>
+<p class="meta">08/11/2026</p>
+<h3>Os 8 princípios</h3>
+<ol>
+<li><b>Focar na necessidade do negócio:</b> tudo o que se faz deve gerar valor para o cliente.</li>
+<li><b>Entregar no prazo:</b> o prazo é respeitado, por isso se usam blocos de tempo fixos.</li>
+<li><b>Colaborar:</b> cliente, usuários e equipe técnica trabalham juntos.</li>
+<li><b>Nunca comprometer a qualidade:</b> os testes acontecem durante o projeto todo, não só no fim.</li>
+<li><b>Construir de forma incremental a partir de bases sólidas:</b> primeiro se define o essencial, depois o produto cresce em partes.</li>
+<li><b>Desenvolver de forma iterativa:</b> a solução melhora a cada ciclo, com o retorno do cliente.</li>
+<li><b>Comunicar de forma contínua e clara:</b> todos sabem o que está acontecendo no projeto.</li>
+<li><b>Demonstrar controle:</b> o andamento fica visível para quem acompanha o projeto.</li>
+</ol>
+<h3>As 7 fases</h3>
+<ol>
+<li><b>Pré-projeto:</b> decide se o projeto vale a pena e se pode começar.</li>
+<li><b>Viabilidade:</b> avalia se o projeto é viável técnica e financeiramente.</li>
+<li><b>Fundamentos:</b> fixa as bases: requisitos de alto nível, solução inicial e plano de entrega.</li>
+<li><b>Exploração:</b> equipe e cliente testam ideias com protótipos e refinam os requisitos.</li>
+<li><b>Engenharia:</b> a solução é construída e testada até ficar pronta para uso.</li>
+<li><b>Implantação:</b> a solução entra no ambiente real e os usuários são orientados.</li>
+<li><b>Pós-projeto:</b> avalia os resultados, faz ajustes e a manutenção.</li>
+</ol>
+<p>Muitos sites ainda mostram a versão clássica do DSDM, com 5 fases: estudo de viabilidade, estudo do negócio, iteração do modelo funcional, iteração de projeto e construção, e implantação.</p>
+</article>
+
+<article>
+<h2>Post 1 – O que é o DSDM?</h2>
+<p class="meta">08/11/2026</p>
+<p>DSDM é a sigla de Dynamic Systems Development Method (no enunciado da atividade aparece como Dynamic System Development Model). É um método ágil criado em 1994 por um consórcio de empresas do Reino Unido, que queria dar mais organização e disciplina ao RAD, o desenvolvimento rápido de aplicações.</p>
+<p>A ideia central inverte a lógica dos projetos tradicionais: prazo, custo e qualidade ficam definidos desde o início, e o que se ajusta é o escopo. O time entrega primeiro o que mais importa para o negócio, e o que for menos importante pode ficar para depois.</p>
+<p>Outra diferença é que o DSDM cobre o projeto inteiro, e não só a programação: ele também trata de gestão, governança e entrega. A versão mais recente se chama DSDM Agile Project Framework (2014); antes dela, o método foi chamado de Atern.</p>
+</article>
+
+</main>
+<footer>
+<h3>Referências</h3>
+<p>KNOWLEDGETRAIN. The DSDM Principles. Disponível em: <a href="https://www.knowledgetrain.co.uk/agile/the-dsdm-principles">https://www.knowledgetrain.co.uk/agile/the-dsdm-principles</a>. Acesso em: 8 nov. 2026.</p>
+<p>TOOLSQA. DSDM Guide. Disponível em: <a href="https://toolsqa.com/agile/dsdm-guide/">https://toolsqa.com/agile/dsdm-guide/</a>. Acesso em: 8 nov. 2026.</p>
+<p>TOOLSHERO. Dynamic Systems Development Method (DSDM) explained. Disponível em: <a href="https://www.toolshero.com/information-technology/dynamic-systems-development-method/">https://www.toolshero.com/information-technology/dynamic-systems-development-method/</a>. Acesso em: 8 nov. 2026.</p>
+<p>UMBREX. DSDM. Disponível em: <a href="https://umbrex.com/resources/frameworks/project-management-frameworks/dsdm/">https://umbrex.com/resources/frameworks/project-management-frameworks/dsdm/</a>. Acesso em: 8 nov. 2026.</p>
+</footer>
+</body>
+</html>
